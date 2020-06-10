@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB:       some_db
+      POSTGRES_PASSWORD: some_password
+      POSTGRES_USER:     some_user

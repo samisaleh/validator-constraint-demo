@@ -1,0 +1,30 @@
+{
+  "name": "json-field-constraints",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd nest-app && npm i",
+    "start:db": "cd local-stack && docker-compose up",
+    "start:nest": "cd nest-app && npm run start:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "3.0.0",
+    "@typescript-eslint/parser": "3.0.0",
+    "aws-sdk": "^2.690.0",
+    "eslint": "7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "prettier": "^2.0.5",
+    "typescript": "3.7.2"
+  },
+  "dependencies": {
+    "cross-zip": "^3.1.0",
+    "mkdirp": "^1.0.4",
+    "redis": "^3.0.2"
+  }
+}
